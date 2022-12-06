@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Buckets
+
+  Created by Selim Doğan on 30.11.2022.
+  
+*/
+"signInFacebook"="Sign In with Facebook";
+"signInGoogle"="Sign In with Google";
+"signInApple"="Sign In with Apple";
+"signupWithEmail"="Sign Up with Email";
+
+"getStarted"="Get started";
+
+"onBoardFirst"="Hand-pickle high quality snacks.";
+"onBoardSecond"="Shop global. Mind-blownly affordable.";
+"onBoardThird"="Deliver on the promise of time.";

@@ -11,4 +11,9 @@ struct Images {
     enum Auth: String {
         case juice = "img_juice"
     }
+    enum OnBoard: String {
+        case first = "slide_first"
+        case second = "slide_second"
+        case third = "slide_third"
+    }
 }

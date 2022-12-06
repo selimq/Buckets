@@ -9,42 +9,31 @@ import SwiftUI
 
 struct WelcomeView: View {
     var body: some View {
-        
         ZStack {
             Image(Images.Auth.juice.rawValue).resizable()
             Color.black30
-            VStack {
-                Spacer()
-                Image(Icons.Auth.appLogo.rawValue)
-                ForEach(SocialLoginButtonModel.items){ b in
-                    SocialLoginButton(buttonModel: b).padding(EdgeInsets(top:6, leading: 16, bottom: 0, trailing: 16))
+            GeometryReader { geometry in
+                VStack {
+                    Spacer()
+                    Image(Icons.Auth.appLogo.rawValue)
+                    Spacer()
+                    // Social login button comes from list
+                    ForEach(SocialLoginButtonModel.items) { b in
+                        SocialLoginButton(buttonModel: b).padding(.buttonPadding)
+                    }
+                    Divider().frame(width: geometry.dw(width: 0.6),
+                                    height: 2).overlay(.gray)
+                    // Email button
+                    CustomButton(onTap: {}, title: LocaleKeys.Buttons.getStarted.rawValue).padding(.buttonPadding)
+                    Spacer().frame(height: geometry.dh(height: 0.1))
                 }
-                Divider().frame( height: 2).overlay(.gray)
-                Spacer()
             }
         }
-        
     }
 }
 
 struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
-        WelcomeView().statusBar(hidden: true)
+        WelcomeView().ignoresSafeArea()
     }
 }
-
-struct SocialLoginButtonModel: Identifiable {
-    let id = UUID()
-    let onTap: () -> Void
-    let logo: String
-    let text: String
-    let color: Color
-    var textColor: Color?
-    static var items: Array<SocialLoginButtonModel> = [
-        SocialLoginButtonModel( onTap: {}, logo: Icons.Social.fbLogo.rawValue, text: "Sign In with Facebook", color: Color.facebookBlue),
-        SocialLoginButtonModel( onTap: {}, logo: Icons.Social.googleLogo.rawValue, text: "Sign In with I", color: Color.white,textColor: Color.black),
-        SocialLoginButtonModel( onTap: {}, logo: Icons.Social.appleLogo.rawValue, text: "Sign In with I", color: Color.black)
-       
-    ]
-}
-

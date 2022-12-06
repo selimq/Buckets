@@ -14,7 +14,7 @@ struct SocialLoginButton: View {
             Button(action: buttonModel.onTap, label: {
                 HStack {
                     Image(buttonModel.logo)
-                    Text(buttonModel.text)
+                    Text(buttonModel.text.locale())
                     Spacer()
                 }.tint(.white).background(buttonModel.color).foregroundColor(buttonModel.textColor)
             }).buttonStyle(.borderedProminent).buttonBorderShape(.roundedRectangle).controlSize(.large).accentColor(buttonModel.color)

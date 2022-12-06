@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E1439DF293A4DF200134537 /* GeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1439DE293A4DF200134537 /* GeometryReader.swift */; };
+		6E1439E2293A4ECA00134537 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1439E1293A4ECA00134537 /* CustomButton.swift */; };
+		6E1439E5293A4F4300134537 /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1439E4293A4F4300134537 /* Padding.swift */; };
+		6E16D0AE2937A77A003F7059 /* SocialLoginButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16D0AD2937A77A003F7059 /* SocialLoginButtonModel.swift */; };
+		6E16D0B42937AB3C003F7059 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E16D0B62937AB3C003F7059 /* Localizable.strings */; };
+		6E16D0B82937ABAB003F7059 /* LocaleKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16D0B72937ABAB003F7059 /* LocaleKeys.swift */; };
+		6EAF77DA293E45B300F4DD50 /* OnBoardSlideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAF77D9293E45B300F4DD50 /* OnBoardSlideModel.swift */; };
 		6EDB544D293659180054A42B /* BucketsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDB544C293659180054A42B /* BucketsApp.swift */; };
 		6EDB544F293659180054A42B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDB544E293659180054A42B /* ContentView.swift */; };
 		6EDB5451293659190054A42B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EDB5450293659190054A42B /* Assets.xcassets */; };
@@ -22,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E1439DE293A4DF200134537 /* GeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReader.swift; sourceTree = "<group>"; };
+		6E1439E1293A4ECA00134537 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		6E1439E4293A4F4300134537 /* Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
+		6E16D0AD2937A77A003F7059 /* SocialLoginButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginButtonModel.swift; sourceTree = "<group>"; };
+		6E16D0B52937AB3C003F7059 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6E16D0B72937ABAB003F7059 /* LocaleKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleKeys.swift; sourceTree = "<group>"; };
+		6EAF77D9293E45B300F4DD50 /* OnBoardSlideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardSlideModel.swift; sourceTree = "<group>"; };
 		6EDB5449293659180054A42B /* Buckets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Buckets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EDB544C293659180054A42B /* BucketsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketsApp.swift; sourceTree = "<group>"; };
 		6EDB544E293659180054A42B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +62,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E1439DC293A4DDC00134537 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6E1439DE293A4DF200134537 /* GeometryReader.swift */,
+				6E1439E3293A4F3000134537 /* Padding */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6E1439E0293A4EB100134537 /* EmailButton */ = {
+			isa = PBXGroup;
+			children = (
+				6E1439E1293A4ECA00134537 /* CustomButton.swift */,
+			);
+			path = EmailButton;
+			sourceTree = "<group>";
+		};
+		6E1439E3293A4F3000134537 /* Padding */ = {
+			isa = PBXGroup;
+			children = (
+				6E1439E4293A4F4300134537 /* Padding.swift */,
+			);
+			path = Padding;
+			sourceTree = "<group>";
+		};
+		6E1439E6293B8E2100134537 /* SocialLoginButtonModel */ = {
+			isa = PBXGroup;
+			children = (
+				6E16D0AD2937A77A003F7059 /* SocialLoginButtonModel.swift */,
+			);
+			path = SocialLoginButtonModel;
+			sourceTree = "<group>";
+		};
+		6E1439E7293BE84500134537 /* OnBoardSlideModel */ = {
+			isa = PBXGroup;
+			children = (
+				6EAF77D9293E45B300F4DD50 /* OnBoardSlideModel.swift */,
+			);
+			path = OnBoardSlideModel;
+			sourceTree = "<group>";
+		};
+		6E16D0AF2937AAF0003F7059 /* Locals */ = {
+			isa = PBXGroup;
+			children = (
+				6E16D0B72937ABAB003F7059 /* LocaleKeys.swift */,
+				6E16D0B62937AB3C003F7059 /* Localizable.strings */,
+			);
+			path = Locals;
+			sourceTree = "<group>";
+		};
 		6EDB5440293659180054A42B = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +196,7 @@
 		6EDB54632936688F0054A42B /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				6E1439E0293A4EB100134537 /* EmailButton */,
 				6EDB5464293668930054A42B /* SocialButton */,
 			);
 			path = Widget;
@@ -148,6 +213,7 @@
 		6EDB5465293668A40054A42B /* OnBoard */ = {
 			isa = PBXGroup;
 			children = (
+				6E1439E7293BE84500134537 /* OnBoardSlideModel */,
 				6EDB5466293668BD0054A42B /* OnBoardView.swift */,
 			);
 			path = OnBoard;
@@ -156,6 +222,7 @@
 		6EDB5468293745BF0054A42B /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
+				6E1439E6293B8E2100134537 /* SocialLoginButtonModel */,
 				6EDB5469293745E70054A42B /* WelcomeView.swift */,
 			);
 			path = Welcome;
@@ -164,6 +231,8 @@
 		6EE67D7B29374E0600878B6B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				6E1439DC293A4DDC00134537 /* Extensions */,
+				6E16D0AF2937AAF0003F7059 /* Locals */,
 				6EE67D8029374FB800878B6B /* Colors */,
 				6EE67D7C29374E0B00878B6B /* Enums */,
 			);
@@ -261,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E16D0B42937AB3C003F7059 /* Localizable.strings in Resources */,
 				6EDB545D293659610054A42B /* Colors.xcassets in Resources */,
 				6EDB545F29365AE80054A42B /* Images.xcassets in Resources */,
 				6EDB5454293659190054A42B /* Preview Assets.xcassets in Resources */,
@@ -278,15 +348,32 @@
 				6EE67D872937506B00878B6B /* Icons.swift in Sources */,
 				6EDB544F293659180054A42B /* ContentView.swift in Sources */,
 				6EE67D8929375BEA00878B6B /* SocialLoginButton.swift in Sources */,
+				6E1439E2293A4ECA00134537 /* CustomButton.swift in Sources */,
 				6EE67D8329374FCB00878B6B /* Colors.swift in Sources */,
+				6E16D0AE2937A77A003F7059 /* SocialLoginButtonModel.swift in Sources */,
 				6EDB544D293659180054A42B /* BucketsApp.swift in Sources */,
 				6EE67D7F29374E2300878B6B /* Images.swift in Sources */,
+				6E1439DF293A4DF200134537 /* GeometryReader.swift in Sources */,
 				6EDB5467293668BD0054A42B /* OnBoardView.swift in Sources */,
 				6EDB546A293745E70054A42B /* WelcomeView.swift in Sources */,
+				6EAF77DA293E45B300F4DD50 /* OnBoardSlideModel.swift in Sources */,
+				6E16D0B82937ABAB003F7059 /* LocaleKeys.swift in Sources */,
+				6E1439E5293A4F4300134537 /* Padding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6E16D0B62937AB3C003F7059 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E16D0B52937AB3C003F7059 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6EDB5455293659190054A42B /* Debug */ = {
@@ -339,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -393,7 +480,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
