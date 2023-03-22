@@ -24,7 +24,7 @@ struct WelcomeView: View {
                     Divider().frame(width: geometry.dw(width: 0.6),
                                     height: 2).overlay(.gray)
                     // Email button
-                    CustomButton(onTap: {}, title: LocaleKeys.Buttons.getStarted.rawValue).padding(.buttonPadding)
+                    CustomButton(onTap: {}, title: LocaleKeys.Auth.email.rawValue).padding(.buttonPadding)
                     Spacer().frame(height: geometry.dh(height: 0.1))
                 }
             }

@@ -14,4 +14,5 @@ public extension Color {
     static var peach: Color { Color("peach") }
     static var indicatorGray: Color { Color("indicatorGray") }
     static var notSelectedIndicatorGray: Color { Color("notSelectedIndicatorGray") }
+    static var karl: Color { Color("karl") }
 }

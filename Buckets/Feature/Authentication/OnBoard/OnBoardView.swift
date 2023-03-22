@@ -8,18 +8,32 @@
 import SwiftUI
 
 struct OnBoardView: View {
-    @State private var currentSlide = OnBoardSlideModel.items[0].id
+    @StateObject var onBoardViewModel = OnBoardViewModel()
 
     var body: some View {
-        GeometryReader { geometry in
-            VStack {
-                Slider(currentSlide: $currentSlide)
-                Spacer()
-                Indicators(currentSlide: $currentSlide)
-                GetStartedButton()
-                Spacer().frame(height: geometry.dh(height: 0.02))
+        NavigationView {
+            GeometryReader { geometry in
+                VStack {
+                    Slider(currentSlide: $onBoardViewModel.currentSlide)
+                    Spacer()
+                    Indicators(currentSlide: $onBoardViewModel.currentSlide)
+
+                    NavigationLink(
+                        isActive: $onBoardViewModel.isWelcomeDirect,
+                        destination: {
+                            WelcomeView().navigationBarHidden(true).ignoresSafeArea()
+                        },
+                        label: {
+                            CustomButton(onTap: {
+                                onBoardViewModel.updateFirstAttempt()
+                            }, title: LocaleKeys.Buttons.getStarted.rawValue).padding(.paddingAll8)
+                        })
+                    Spacer().frame(height: geometry.dh(height: 0.02))
+                }
+            }.padding(.paddingAll16).onAppear {
+                onBoardViewModel.checkUserFirstTime()
             }
-        }.padding(.paddingAll16)
+        }
     }
 }
 
@@ -43,12 +57,6 @@ private struct SliderCard: View {
             Text(item.titleKey.locale())
                 .font(.title).multilineTextAlignment(.center)
         }
-    }
-}
-
-private struct GetStartedButton: View {
-    var body: some View {
-        CustomButton(onTap: {}, title: LocaleKeys.Buttons.getStarted.rawValue).padding(.paddingAll8)
     }
 }
 

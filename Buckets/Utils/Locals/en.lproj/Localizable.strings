@@ -15,3 +15,9 @@
 "onBoardFirst"="Hand-pickle high quality snacks.";
 "onBoardSecond"="Shop global. Mind-blownly affordable.";
 "onBoardThird"="Deliver on the promise of time.";
+
+"welcomeBack"="Welcome back!";
+"writeYourEmail"="Write your email";
+"writeYourPassword"="Write your password";
+"createAccount"="Create account";
+"policyAgreement"="By clicking \"Create account\", I agree to SnackOverflow’s [TOS](https://www.google.com) and [Privacy Policy.](https://www.google.com)";
