@@ -18,6 +18,10 @@
 		6E63DBC029C9A03700D7B32E /* WelcomeView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E63DBBF29C9A03700D7B32E /* WelcomeView2.swift */; };
 		6E63DBC329C9A67100D7B32E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E63DBC229C9A67100D7B32E /* LoginView.swift */; };
 		6E63DBC629C9ADA500D7B32E /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E63DBC529C9ADA500D7B32E /* TextFieldModifier.swift */; };
+		6E6A3BED29CB1E4E004E78FD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6A3BEC29CB1E4E004E78FD /* NetworkManager.swift */; };
+		6E6A3BF029CB2B86004E78FD /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6A3BEF29CB2B86004E78FD /* UserResponse.swift */; };
+		6E6A3BF329CB2DAD004E78FD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6E6A3BF229CB2DAD004E78FD /* Alamofire */; };
+		6E6A3BFB29CB3118004E78FD /* BucketsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6A3BFA29CB3118004E78FD /* BucketsTests.swift */; };
 		6EAF77DA293E45B300F4DD50 /* OnBoardSlideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAF77D9293E45B300F4DD50 /* OnBoardSlideModel.swift */; };
 		6EDB544D293659180054A42B /* BucketsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDB544C293659180054A42B /* BucketsApp.swift */; };
 		6EDB544F293659180054A42B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDB544E293659180054A42B /* ContentView.swift */; };
@@ -33,6 +37,16 @@
 		6EE67D8929375BEA00878B6B /* SocialLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE67D8829375BEA00878B6B /* SocialLoginButton.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6E6A3BFC29CB3118004E78FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EDB5441293659180054A42B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EDB5448293659180054A42B;
+			remoteInfo = Buckets;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		6E1439DE293A4DF200134537 /* GeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReader.swift; sourceTree = "<group>"; };
 		6E1439E1293A4ECA00134537 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -45,6 +59,10 @@
 		6E63DBBF29C9A03700D7B32E /* WelcomeView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView2.swift; sourceTree = "<group>"; };
 		6E63DBC229C9A67100D7B32E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6E63DBC529C9ADA500D7B32E /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
+		6E6A3BEC29CB1E4E004E78FD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		6E6A3BEF29CB2B86004E78FD /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		6E6A3BF829CB3118004E78FD /* BucketsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BucketsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E6A3BFA29CB3118004E78FD /* BucketsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketsTests.swift; sourceTree = "<group>"; };
 		6EAF77D9293E45B300F4DD50 /* OnBoardSlideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardSlideModel.swift; sourceTree = "<group>"; };
 		6EDB5449293659180054A42B /* Buckets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Buckets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EDB544C293659180054A42B /* BucketsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketsApp.swift; sourceTree = "<group>"; };
@@ -62,10 +80,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6E6A3BF529CB3118004E78FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6EDB5446293659180054A42B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E6A3BF329CB2DAD004E78FD /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,10 +165,43 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		6E6A3BEA29CB1E2C004E78FD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6E6A3BEB29CB1E35004E78FD /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6E6A3BEB29CB1E35004E78FD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6E6A3BEC29CB1E4E004E78FD /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6E6A3BEE29CB2B78004E78FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6E6A3BEF29CB2B86004E78FD /* UserResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6E6A3BF929CB3118004E78FD /* BucketsTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E6A3BFA29CB3118004E78FD /* BucketsTests.swift */,
+			);
+			path = BucketsTests;
+			sourceTree = "<group>";
+		};
 		6EDB5440293659180054A42B = {
 			isa = PBXGroup;
 			children = (
 				6EDB544B293659180054A42B /* Buckets */,
+				6E6A3BF929CB3118004E78FD /* BucketsTests */,
 				6EDB544A293659180054A42B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -151,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				6EDB5449293659180054A42B /* Buckets.app */,
+				6E6A3BF829CB3118004E78FD /* BucketsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,6 +218,7 @@
 		6EDB544B293659180054A42B /* Buckets */ = {
 			isa = PBXGroup;
 			children = (
+				6E6A3BEA29CB1E2C004E78FD /* Core */,
 				6EE67D7B29374E0600878B6B /* Utils */,
 				6EDB5462293668890054A42B /* Product */,
 				6EDB54602936687A0054A42B /* Feature */,
@@ -216,6 +277,7 @@
 		6EDB5462293668890054A42B /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				6E6A3BEE29CB2B78004E78FD /* Model */,
 				6EDB54632936688F0054A42B /* Widget */,
 			);
 			path = Product;
@@ -306,6 +368,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6E6A3BF729CB3118004E78FD /* BucketsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E6A3BFE29CB3118004E78FD /* Build configuration list for PBXNativeTarget "BucketsTests" */;
+			buildPhases = (
+				6E6A3BF429CB3118004E78FD /* Sources */,
+				6E6A3BF529CB3118004E78FD /* Frameworks */,
+				6E6A3BF629CB3118004E78FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E6A3BFD29CB3118004E78FD /* PBXTargetDependency */,
+			);
+			name = BucketsTests;
+			productName = BucketsTests;
+			productReference = 6E6A3BF829CB3118004E78FD /* BucketsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		6EDB5448293659180054A42B /* Buckets */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EDB5457293659190054A42B /* Build configuration list for PBXNativeTarget "Buckets" */;
@@ -319,6 +399,9 @@
 			dependencies = (
 			);
 			name = Buckets;
+			packageProductDependencies = (
+				6E6A3BF229CB2DAD004E78FD /* Alamofire */,
+			);
 			productName = Buckets;
 			productReference = 6EDB5449293659180054A42B /* Buckets.app */;
 			productType = "com.apple.product-type.application";
@@ -333,6 +416,10 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					6E6A3BF729CB3118004E78FD = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 6EDB5448293659180054A42B;
+					};
 					6EDB5448293659180054A42B = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -347,16 +434,27 @@
 				Base,
 			);
 			mainGroup = 6EDB5440293659180054A42B;
+			packageReferences = (
+				6E6A3BF129CB2DAD004E78FD /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 6EDB544A293659180054A42B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				6EDB5448293659180054A42B /* Buckets */,
+				6E6A3BF729CB3118004E78FD /* BucketsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6E6A3BF629CB3118004E78FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6EDB5447293659180054A42B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,6 +470,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6E6A3BF429CB3118004E78FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6A3BFB29CB3118004E78FD /* BucketsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6EDB5445293659180054A42B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -387,7 +493,9 @@
 				6E2A2FB529C9F35B00442010 /* UserStatusCache.swift in Sources */,
 				6E63DBC629C9ADA500D7B32E /* TextFieldModifier.swift in Sources */,
 				6EE67D7F29374E2300878B6B /* Images.swift in Sources */,
+				6E6A3BF029CB2B86004E78FD /* UserResponse.swift in Sources */,
 				6E1439DF293A4DF200134537 /* GeometryReader.swift in Sources */,
+				6E6A3BED29CB1E4E004E78FD /* NetworkManager.swift in Sources */,
 				6EDB5467293668BD0054A42B /* OnBoardView.swift in Sources */,
 				6E63DBC029C9A03700D7B32E /* WelcomeView2.swift in Sources */,
 				6EDB546A293745E70054A42B /* WelcomeView.swift in Sources */,
@@ -399,6 +507,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E6A3BFD29CB3118004E78FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EDB5448293659180054A42B /* Buckets */;
+			targetProxy = 6E6A3BFC29CB3118004E78FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6E16D0B62937AB3C003F7059 /* Localizable.strings */ = {
@@ -412,6 +528,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6E6A3BFF29CB3118004E78FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9FCSJXZ95F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdogan.BucketsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Buckets.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Buckets";
+			};
+			name = Debug;
+		};
+		6E6A3C0029CB3118004E78FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9FCSJXZ95F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdogan.BucketsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Buckets.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Buckets";
+			};
+			name = Release;
+		};
 		6EDB5455293659190054A42B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -587,6 +741,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6E6A3BFE29CB3118004E78FD /* Build configuration list for PBXNativeTarget "BucketsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E6A3BFF29CB3118004E78FD /* Debug */,
+				6E6A3C0029CB3118004E78FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6EDB5444293659180054A42B /* Build configuration list for PBXProject "Buckets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -606,6 +769,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6E6A3BF129CB2DAD004E78FD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6E6A3BF229CB2DAD004E78FD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E6A3BF129CB2DAD004E78FD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6EDB5441293659180054A42B /* Project object */;
 }

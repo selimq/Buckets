@@ -52,5 +52,69 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "60F97278-05D8-4405-A734-D2962B892C8F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BucketsTests/BucketsTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "testFetchUserAddCheck()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "60F97278-05D8-4405-A734-D2962B892C8F - 9e8d90bc5b285031"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for BucketsTests.BucketsTests.testFetchUserAddCheck() async throws -&gt; ()"
+                  moduleName = "BucketsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/selimdogan/Projects/selim/swift/Buckets/BucketsTests/BucketsTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "60F97278-05D8-4405-A734-D2962B892C8F - 9e8d90bc5b285031"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for BucketsTests.BucketsTests.testFetchUserAddCheck() async throws -&gt; ()"
+                  moduleName = "BucketsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/selimdogan/Projects/selim/swift/Buckets/BucketsTests/BucketsTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A6711C63-9DB8-4B88-926E-BD053C7E0EBC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BucketsTests/BucketsTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "testFetchUserAddCheck()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
